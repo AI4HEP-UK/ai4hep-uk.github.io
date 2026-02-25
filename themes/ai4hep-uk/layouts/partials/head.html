@@ -1,0 +1,16 @@
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- compile CSS -->
+{{ $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/myscss")) }}
+{{ $style := resources.Get "sass/main.scss" | css.Sass $options }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen">
+
+<title>
+    {{- if .IsHome -}}
+    {{- .Site.Title -}}{{ with .Site.Params.description }} - {{ . }}{{ end -}}
+    {{- else -}}
+    {{- .Title }} - {{ .Site.Title -}}
+    {{- end -}}
+</title>

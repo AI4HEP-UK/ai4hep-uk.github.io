@@ -1,0 +1,9 @@
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<!-- <script src="/assets/js/bootstrap.bundle.min.js"></script> -->
+{{ $bootstrap := resources.Get "js/bootstrap.bundle.min.js" }}
+{{ $js := slice $bootstrap | resources.Concat "js/bundle.js" | resources.Minify }}
+<script src="{{$js.RelPermalink}}" defer></script>
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<script src="/js/main.js"></script>
