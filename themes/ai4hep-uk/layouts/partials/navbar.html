@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white mb-3 sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="{{ "/images/logos/ai4hep-uk.png" | relURL }}" alt="AI4HEP-UK logo" class="logo" height="60px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                {{ range .Site.Menus.main }}
+                <li class="nav-item display-6">
+                    <a class="nav-link {{ if $.IsMenuCurrent " main" . }} active" aria-current="page{{ end }}"
+                        href="{{ .URL }}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+                <li class="nav-item"><a class="nav-link" href="{{- .Site.Params.github_org -}}" alt="link to the AI4HEP-UK GitHub repo"><img src="{{ "/images/logos/GitHub-Mark.png" | relURL }}" alt="Github logo" class="logo" height="50px"></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

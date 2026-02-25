@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{ partial "dropdown-navbar" . }}
+<body class="d-flex flex-column min-vh-100">
+    <hr class="separator">
+    <header>{{- partial "header" . -}}
+    </header>
+    <hr class="separator">
+    {{ partial "head" . }}
+</head>
+    <main class="mb-auto">
+        {{ block "main" . }}{{ end }}
+    </main>
+    <footer>
+        {{ partial "footer" . }}
+        {{ partial "script-footer" . }}
+    </footer>
+</body>
+
+</html>

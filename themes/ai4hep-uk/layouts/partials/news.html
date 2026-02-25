@@ -1,0 +1,16 @@
+<h2>News and announcements</h2>
+<ul class="list-group">
+  {{- range where site.RegularPages "Type" "posts" -}}
+    {{ if gt (.Params.start_date | time.AsTime) now }}
+    {{ $startDate := .Params.start_date | time.Format "Jan 1, 2026" }}
+      <li class="list-group-item  list-group-item-info">
+          <span class="text-success">Upcoming:</span> <span class="post-meta font-weight-bold">{{ $startDate }}</span>  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ else }}
+      <li class="list-group-item">
+          <span class="post-meta">{{ .Date | time.Format "Jan 1, 2026" }}</span>
+          <a href="{{.RelPermalink}}">{{.Title}}</a>
+      </li>
+    {{- end }}
+  {{- end -}}
+</ul>

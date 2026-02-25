@@ -1,0 +1,9 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "styles";
+@import "syntax";
+
+.separator {
+  background-size: 10px;
+  border-top: 10px solid #438FBF;
+  border-color: #438FBF;
+}
