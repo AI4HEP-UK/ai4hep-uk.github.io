@@ -1,0 +1,36 @@
+baseURL = 'https://ai4hep-uk.github.io'
+languageCode = 'en-gb'
+title = 'AI4HEP-UK'
+
+theme = "ai4hep-uk"
+relativeURLS = true
+
+staticDir = ['static']
+
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[module]
+  [[module.mounts]]
+    source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    target = "assets/js/bootstrap.bundle.min.js"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+description = "Enabling AI for High Energy Physics in the UK"
+github_org = "https://github.com/AI4HEP-UK"
+
+sectionPagesMenu = "main"
+[menu]
+ [[menu.main]]
+     identifier = "about"
+     title = "About"
+     url = "/about/"
+     weight = 100
+ [[menu.main]]
+     identifier = "links"
+     title = "Links"
+     url = "/links/"
+     weight = 500
