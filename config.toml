@@ -30,6 +30,16 @@ sectionPagesMenu = "main"
      url = "/about/"
      weight = 100
  [[menu.main]]
+     identifier = "projects"
+     title = "Projects"
+     url = "/projects/"
+     weight = 200
+ [[menu.main]]
+     identifier = "publications"
+     title = "Publications"
+     url = "/publications/"
+     weight = 400
+ [[menu.main]]
      identifier = "links"
      title = "Links"
      url = "/links/"
