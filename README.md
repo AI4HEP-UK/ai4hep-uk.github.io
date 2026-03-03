@@ -21,6 +21,16 @@ hugo new content content/posts/YYYY-MM-DD_my-nice-post.md
 
 As a rule, add new pages with the `hugo new` command so that they get placed in the correct folder.
 
+All content including draft content can be visualised and checked with Hugo’s development server
+with the following command - more exist:
+
+```bash
+hugo server --buildDrafts
+```
+
+Follow the URL displayed on the terminal to view.
+(It is handy to keep the development server running while changing content since the server automatically updates.)
+
 ### Updating Hugo and Bootstrap
 
 Refer to the relevant documentation on the [Hugo](https://gohugo.io) and [Bootstrap](https://getbootstrap.com/)
