@@ -1,0 +1,11 @@
+/*
+ * Override some of Bootstrap's defaults.
+ */
+
+a {
+  color: #2C3640;
+}
+
+a:hover {
+  color: #416985;
+}
