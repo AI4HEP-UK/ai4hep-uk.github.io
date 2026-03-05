@@ -29,6 +29,11 @@ sectionPagesMenu = "main"
      title = "About"
      url = "/about/"
      weight = 100
+[[menu.main]]
+    identifier = "events"
+    title = "Events"
+    url = "/events/"
+    weight = 150
  [[menu.main]]
      identifier = "projects"
      title = "Projects"
