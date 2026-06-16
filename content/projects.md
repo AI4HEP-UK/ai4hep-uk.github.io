@@ -40,7 +40,7 @@ AI models offer the potential for enhancing detection and analysis of issues thr
 
 ##### Pandora Deep Learning for Interaction Vertex Reconstruction in SBND
 
-Proponents, University of Sheffield: Davide Costanzo, Alexandra Moor
+Proponents, University of Sheffield: Alexandra Moor, Rhiannon Smith-Jones
 
 This project aims to improve pattern recognition in Liquid Argon (LAr) neutrino detectors by the use of Deep Learning in the area of vertexing. Finding the interaction vertex of the neutrino is a key step upon which the rest of the reconstruction is built, and is often difficult to attain precisely due to the abundance of activity that surrounds each vertex. This work is being completed within the context of Pandora, a well established multi-algorithm pattern recognition software used across all active LAr Time Projection Chamber-based neutrino experiments. The algorithm being adapted was originally developed for the Deep Underground Neutrino Experiment (DUNE) by Andy Chappell and showed extremely promising results, which we expect to continue in further LAr experiments investigated.
 It takes a two pass approach, first identifying a general region of interest before performing a more detailed analysis using those results.
