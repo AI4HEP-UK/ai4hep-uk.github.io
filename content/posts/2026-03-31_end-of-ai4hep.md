@@ -14,4 +14,6 @@ As a reminder, the project was created to help establishing a UK AI HEP framewor
 
 2. Bring together researchers across experiment, theory/phenomenology, but also computing and software experts, to review progress, identify barriers and opportunities for enabling AI in HEP, sharing tools, promoting successful use-cases, and improving skills/training and knowledge transfer.
 
+The status and next steps of the core projects and rapid response mini-projects are under review.
+
 Be sure to check the (future) post-Project Report under [Publications]({{< ref "/publications" >}}).
