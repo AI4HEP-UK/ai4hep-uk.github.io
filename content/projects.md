@@ -45,4 +45,18 @@ _Proponents, University of Sheffield: Alexandra Moor, Rhiannon Smith-Jones_
 This project aims to improve pattern recognition in Liquid Argon (LAr) neutrino detectors by the use of Deep Learning in the area of vertexing. Finding the interaction vertex of the neutrino is a key step upon which the rest of the reconstruction is built, and is often difficult to attain precisely due to the abundance of activity that surrounds each vertex. This work is being completed within the context of Pandora, a well established multi-algorithm pattern recognition software used across all active LAr Time Projection Chamber-based neutrino experiments. The algorithm being adapted was originally developed for the Deep Underground Neutrino Experiment (DUNE) by Andy Chappell and showed extremely promising results, which we expect to continue in further LAr experiments investigated.
 It takes a two pass approach, first identifying a general region of interest before performing a more detailed analysis using those results.
 In DUNE, this provided a notable improvement in performance over the Boosted Decision Tree which was used previously to accomplish the vertexing (<https://doi.org/10.1140/epjc/s10052-025-14313-8>).
+
+##### Cross-experimental Tools and Open-source Datasets
+
+_Proponents, University College London: Jackson Barr, Tim Scanlon_
+
+This project aims to support the development of reusable AI tools and open datasets for high-energy physics, reducing duplicated effort across experiments and enabling new machine-learning methods to be tested on realistic, experiment-quality data. The work builds on recent UCL developments in transformer-based reconstruction, flavour tagging, and AI-assisted documentation, with a focus on making these tools portable beyond their original experiment.
+
+A key strand of the project is the development and application of TrackFormer, a general tracking architecture inspired by modern image-segmentation approaches and adapted to particle-detector data. The project will explore how such models can be transferred across very different detector environments, including high-occupancy collider tracking, Mu3e, and LHCb reconstruction tasks. This will establish practical routes for sharing advanced reconstruction methods across experiments and lowering the effort required to adopt them.
+
+The project will also support the release and exploitation of large-scale open training datasets and associated model-training software for machine-learning studies in HEP. These datasets, including large jet-flavour-tagging samples, provide a realistic alternative to simplified toy datasets and allow the community to test scaling laws, foundation-model approaches, and robust validation methods at scientific data scales.
+
+A further strand will investigate LLM-based tools for experiment documentation and workflows, building on ChatAtlas-style retrieval over internal documentation and exploring how similar approaches can be reused by other experiments. Together, these activities will create practical shared infrastructure for AI-enabled reconstruction, analysis support, and knowledge transfer across the UK HEP community.
+
+Topic: AI for data-intensive analysis, reconstruction, or inference; Development or application of methods or tools that can be reused across experiments or institutions; Open datasets and AI benchmarks for HEP.
     
