@@ -23,12 +23,12 @@ description = "Enabling AI for High Energy Physics in the UK"
 github_org = "https://github.com/AI4HEP-UK"
 
 sectionPagesMenu = "main"
-[menu]
- [[menu.main]]
-     identifier = "about"
-     title = "About"
-     url = "/about/"
-     weight = 100
+#[menu]
+# [[menu.main]]
+#     identifier = "about"
+#     title = "About"
+#     url = "/about/"
+#     weight = 100
 [[menu.main]]
     identifier = "events"
     title = "Events"
